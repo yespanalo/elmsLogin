@@ -36,6 +36,7 @@ dependencies:
   font_awesome_flutter: ^10.1.0
   firebase_core: ^1.21.1
   firebase_auth: ^3.7.0
+  persistent_bottom_nav_bar: ^4.0.2
 
 dev_dependencies:
   flutter_test:
