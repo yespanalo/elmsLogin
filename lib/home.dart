@@ -6,6 +6,8 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'package:fluttertoast/fluttertoast.dart';
+
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -35,6 +37,14 @@ class _HomeState extends State<Home> {
       );
     } on FirebaseAuthException catch (e) {
       setState(() {
+        Fluttertoast.showToast(
+        msg: "Invalid E-mail or Password!",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+        fontSize: 16.0);
         errorMessage = e.message;
       });
     }

@@ -37,6 +37,8 @@ dependencies:
   firebase_core: ^1.21.1
   firebase_auth: ^3.7.0
   persistent_bottom_nav_bar: ^4.0.2
+  fluttertoast: ^8.0.9
+  sweetsheet: ^0.4.0
 
 dev_dependencies:
   flutter_test:
