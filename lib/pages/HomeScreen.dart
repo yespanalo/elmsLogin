@@ -3,7 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:sweetsheet/sweetsheet.dart';
 import '../auth.dart';
 import '../home.dart';
 
@@ -16,10 +17,35 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final User? user = Auth().currentUser;
+  final SweetSheet _sweetSheet = SweetSheet();
+
   Future<void> signOut() async {
     await Auth().signOut();
-    Navigator.of(context, rootNavigator: true)
-        .pushReplacement(MaterialPageRoute(builder: (context) => new Home()));
+    _sweetSheet.show(
+      context: context,
+      title: Text("Attention"),
+      description: Text('Are you sure you want to sign out?'),
+      color: CustomSheetColor(
+        main: Color.fromARGB(255, 119, 36, 37),
+        accent: Color(0xff7b1113),
+        icon: Colors.white,
+      ),
+      icon: Icons.logout,
+      positive: SweetSheetAction(
+        onPressed: () {
+          Navigator.of(context, rootNavigator: true).pushReplacement(
+              MaterialPageRoute(builder: (context) => new Home()));
+        },
+        title: 'Yes',
+        icon: Icons.open_in_new,
+      ),
+      negative: SweetSheetAction(
+        onPressed: () {
+          Navigator.of(context).pop();
+        },
+        title: 'CANCEL',
+      ),
+    );
   }
 
   late final mailID = user?.email;
@@ -57,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 5,
             ),
             Text(
-              "2019-00514-SR-0",
+              "****-*****-SR-0",
               style: TextStyle(color: Colors.grey, fontSize: 14),
             ),
             Spacer(),
@@ -70,15 +96,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 child: Text(
                   "Signout ",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.white),
                 ),
                 style: ButtonStyle(
                   backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.yellow),
+                      MaterialStateProperty.all<Color>(Color(0xff7b1113)),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18.0),
-                      side: BorderSide(color: Colors.yellow),
+                      side: BorderSide(color: Color(0xff7b1113)),
                     ),
                   ),
                 ),
