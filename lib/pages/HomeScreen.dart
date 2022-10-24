@@ -142,6 +142,200 @@ class _HomeScreenState extends State<HomeScreen> {
                 // ),
               ],
             ),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 10),
+                child: Text(
+                  "Announcements",
+                  style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black,
+                      fontSize: 23),
+                ),
+              ),
+              Spacer(),
+            ],
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                Container(
+                  width: 300,
+                  height: 250,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        bottom: 0,
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30.0)),
+                          child: Container(
+                            width: 290,
+                            height: 240,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 0,
+                        child: Card(
+                          color: Colors.red,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30.0)),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(30),
+                              image: DecorationImage(
+                                fit: BoxFit.fitWidth,
+                                image: AssetImage("images/noclass.jpg"),
+                              ),
+                            ),
+                            width: 290,
+                            height: 130,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 20,
+                        right: 20,
+                        child: Text(
+                          "5 Hours Ago",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 50,
+                        left: 20,
+                        child: Text(
+                          "No Classes Tommorrow\nDue to Typhoon uten",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  width: 300,
+                  height: 250,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        bottom: 0,
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30.0)),
+                          child: Container(
+                            width: 290,
+                            height: 240,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 0,
+                        child: Card(
+                          color: Colors.red,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30.0)),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(30),
+                              image: DecorationImage(
+                                fit: BoxFit.fitWidth,
+                                image: AssetImage("images/noclass.jpg"),
+                              ),
+                            ),
+                            width: 290,
+                            height: 130,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 20,
+                        right: 20,
+                        child: Text(
+                          "5 Hours Ago",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 50,
+                        left: 20,
+                        child: Text(
+                          "No Classes Tommorrow\nDue to Typhoon uten",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  width: 300,
+                  height: 250,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        bottom: 0,
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30.0)),
+                          child: Container(
+                            width: 290,
+                            height: 240,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 0,
+                        child: Card(
+                          color: Colors.red,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30.0)),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(30),
+                              image: DecorationImage(
+                                fit: BoxFit.fitWidth,
+                                image: AssetImage("images/noclass.jpg"),
+                              ),
+                            ),
+                            width: 290,
+                            height: 130,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 20,
+                        right: 20,
+                        child: Text(
+                          "5 Hours Ago",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 50,
+                        left: 20,
+                        child: Text(
+                          "No Classes Tommorrow\nDue to Typhoon uten",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
           )
         ],
       )),
