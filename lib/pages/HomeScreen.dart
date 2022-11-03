@@ -271,7 +271,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         bottom: 50,
                         left: 20,
                         child: Text(
-                          "No Classes Tommorrow\nDue to Typhoon uten",
+                          "No Classes Tommorrow\nDue to Typhoon PAENG",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 20),
                         ),
