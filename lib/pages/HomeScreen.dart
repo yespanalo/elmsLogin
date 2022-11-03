@@ -86,7 +86,106 @@ class _HomeScreenState extends State<HomeScreen> {
               "****-*****-SR-0",
               style: TextStyle(color: Colors.grey, fontSize: 14),
             ),
+            Divider(
+              indent: 20,
+              endIndent: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 10, top: 20, bottom: 10),
+                      child: Text(
+                        "COURSE",
+                        style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 15),
+                          width: 50,
+                          child: Image.asset("images/elitelogo.png"),
+                        ),
+                        SizedBox(
+                          width: 15,
+                        ),
+                        Text(
+                          "Bachelor of Science in \nInformation Tecnology",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                              letterSpacing: 1),
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 10, top: 20, bottom: 10),
+                      child: Text(
+                        "SECTION",
+                        style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        SizedBox(
+                          width: 15,
+                        ),
+                        Text(
+                          "4-2",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                              letterSpacing: 1),
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+              ],
+            ),
             Spacer(),
+            Container(
+              width: 250,
+              child: TextButton(
+                onPressed: () {
+                  signOut();
+                },
+                child: Text(
+                  "Edit password ",
+                  style: TextStyle(color: Color(0xff7b1113)),
+                ),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                      Color.fromARGB(255, 253, 253, 253)),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                      side: BorderSide(color: Color(0xff7b1113)),
+                    ),
+                  ),
+                ),
+              ),
+            ),
             Container(
               width: 250,
               margin: EdgeInsets.only(bottom: 50),
