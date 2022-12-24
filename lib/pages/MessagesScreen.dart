@@ -12,6 +12,6 @@ class MessagesScreen extends StatefulWidget {
 class _MessagesScreenState extends State<MessagesScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: Text("This is the MessagesScreen"));
+    return SafeArea(child: Text("MERRY NA CHRISTMAS PA!"));
   }
 }

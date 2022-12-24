@@ -38,13 +38,13 @@ class _HomeState extends State<Home> {
     } on FirebaseAuthException catch (e) {
       setState(() {
         Fluttertoast.showToast(
-        msg: "Invalid E-mail or Password!",
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Colors.red,
-        textColor: Colors.white,
-        fontSize: 16.0);
+            msg: "Invalid E-mail or Password!",
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.CENTER,
+            timeInSecForIosWeb: 1,
+            backgroundColor: Colors.red,
+            textColor: Colors.white,
+            fontSize: 16.0);
         errorMessage = e.message;
       });
     }
