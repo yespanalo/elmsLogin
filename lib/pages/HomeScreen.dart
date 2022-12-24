@@ -168,7 +168,7 @@ class _HomeScreenState extends State<HomeScreen> {
               width: 250,
               child: TextButton(
                 onPressed: () {
-                  signOut();
+                  // signOut();
                 },
                 child: Text(
                   "Edit password ",
@@ -315,7 +315,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         bottom: 50,
                         left: 20,
                         child: Text(
-                          "No Classes Tommorrow\nDue to Typhoon uten",
+                          "It's a RAINY DAY!",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 20),
                         ),
@@ -350,7 +350,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               borderRadius: BorderRadius.circular(30),
                               image: DecorationImage(
                                 fit: BoxFit.fitWidth,
-                                image: AssetImage("images/noclass.jpg"),
+                                image: AssetImage("images/SportFest.jpg"),
                               ),
                             ),
                             width: 290,
@@ -362,7 +362,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         bottom: 20,
                         right: 20,
                         child: Text(
-                          "5 Hours Ago",
+                          "2 Hours Ago",
                           style: TextStyle(color: Colors.grey),
                         ),
                       ),
@@ -370,7 +370,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         bottom: 50,
                         left: 20,
                         child: Text(
-                          "No Classes Tommorrow\nDue to Typhoon PAENG",
+                          "Sports Fest is on February 2023! Be ready",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 20),
                         ),
@@ -405,7 +405,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               borderRadius: BorderRadius.circular(30),
                               image: DecorationImage(
                                 fit: BoxFit.fitWidth,
-                                image: AssetImage("images/noclass.jpg"),
+                                image: AssetImage("images/CovidOut.jpg"),
                               ),
                             ),
                             width: 290,
@@ -417,7 +417,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         bottom: 20,
                         right: 20,
                         child: Text(
-                          "5 Hours Ago",
+                          "1 Hour Ago",
                           style: TextStyle(color: Colors.grey),
                         ),
                       ),
@@ -425,7 +425,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         bottom: 50,
                         left: 20,
                         child: Text(
-                          "No Classes Tommorrow\nDue to Typhoon uten",
+                          "Foundation Day is postponed to February 2023",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 20),
                         ),
